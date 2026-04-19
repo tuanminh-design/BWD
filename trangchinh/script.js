@@ -49,7 +49,7 @@ const navLinks = document.querySelectorAll('.nav-links a');
     if(form) {
         form.addEventListener('submit', function(event) {
             event.preventDefault(); 
-            window.location.href = 'tranggiaodintruong.html';
+            window.location.href = '../tranggiaodintruong/index.html';
         });
     }
 
