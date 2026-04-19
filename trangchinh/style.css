@@ -1,0 +1,156 @@
+/* =========================================
+   RESET & BIẾN MÀU SẮC CHUẨN GIAO DIỆN
+========================================= */
+:root {
+    --primary: #1d4ed8; 
+    --primary-hover: #1e40af;
+    --gradient: linear-gradient(90deg, #1d4ed8 0%, #8b5cf6 100%);
+    --bg-body: #f8fafc;
+    --bg-card: #ffffff;
+    --text-main: #0f172a;
+    --text-sub: #64748b;
+    --bg-input: #e2e8f0;
+    --border-radius: 16px;
+}
+
+/* Biến màu sắc khi bật Dark Mode */
+body.dark-mode {
+    --bg-body: #0f172a;       
+    --bg-card: #1e293b;       
+    --text-main: #f8fafc;     
+    --bg-input: #334155;      
+}
+
+body.dark-mode .hero h1 { color: #f8fafc; } 
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+html { 
+    scroll-behavior: smooth; 
+    scroll-padding-top: 90px;
+} 
+
+body { background-color: var(--bg-body); color: var(--text-main); line-height: 1.5; transition: background-color 0.3s, color 0.3s; }
+a { text-decoration: none; }
+
+/* =========================================
+   1. HEADER
+========================================= */
+.header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 24px 8%; background: var(--bg-body);
+    transition: background-color 0.3s;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+}
+.logo { font-size: 24px; font-weight: 800; color: var(--primary); }
+.nav-links { display: flex; gap: 40px; list-style: none; }
+.nav-links a {
+    color: var(--text-sub); font-weight: 500; font-size: 15px;
+    padding-bottom: 4px; transition: 0.3s;
+}
+.nav-links a.active, .nav-links a:hover { color: var(--primary); border-bottom: 2px solid var(--primary); }
+.theme-btn { background: none; border: none; cursor: pointer; font-size: 20px; color: var(--primary); outline: none; }
+
+/* =========================================
+   2. HERO SECTION & FORM TÌM KIẾM
+========================================= */
+.hero { text-align: center; padding: 60px 20px; }
+.hero h1 { font-size: 56px; font-weight: 800; line-height: 1.1; margin-bottom: 16px; color: #1e293b; transition: color 0.3s; }
+.text-gradient { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-style: italic; }
+.hero p { color: var(--text-sub); font-size: 16px; margin-bottom: 40px; }
+
+.search-box {
+    background: var(--bg-card); max-width: 700px; margin: 0 auto;
+    padding: 40px; border-radius: 24px; text-align: left;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+    transition: background-color 0.3s;
+}
+.form-group { margin-bottom: 24px; }
+.form-group label {
+    display: block; font-size: 12px; font-weight: 700; color: var(--text-sub);
+    margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+
+/* =========================================
+   INPUT & SELECT (Đã fix lỗi theo yêu cầu)
+========================================= */
+select, input {
+    width: 100%; padding: 14px 20px; border-radius: 12px; border: none;
+    background-color: var(--bg-input); font-size: 15px; color: var(--text-main); font-weight: 500;
+    outline: none; transition: 0.3s;
+}
+
+/* FIX LỖI ẢNH 1: Đổi màu nền Select theo Sáng/Tối */
+select option {
+    background-color: var(--bg-body); 
+    color: var(--text-main);          
+}
+
+select:focus, input:focus { box-shadow: 0 0 0 2px var(--primary); background: #fff; }
+body.dark-mode select:focus, body.dark-mode input:focus { background: var(--bg-input); }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+/* =========================================
+   TAGS NĂNG KHIẾU (Đã fix hiệu ứng Tag)
+========================================= */
+.tags-container { display: flex; flex-wrap: wrap; gap: 10px; }
+.tag {
+    padding: 10px 20px; border-radius: 30px; border: none;
+    background-color: var(--bg-input); color: var(--text-sub); font-weight: 500; font-size: 14px;
+    cursor: pointer; transition: 0.3s;
+}
+.tag:hover { background-color: #cbd5e1; }
+
+/* FIX LỖI TAG ACTIVE: Đổi màu & thêm đổ bóng */
+.tag.active { 
+    background-color: var(--primary); 
+    color: white; 
+    box-shadow: 0 4px 10px rgba(29, 78, 216, 0.3); 
+}
+
+.btn-submit {
+    width: 100%; padding: 16px; border-radius: 12px; border: none;
+    background-color: var(--primary); color: white; font-size: 16px; font-weight: 600;
+    cursor: pointer; transition: 0.3s; margin-top: 10px;
+}
+.btn-submit:hover { background-color: var(--primary-hover); box-shadow: 0 8px 20px rgba(29, 78, 216, 0.3); }
+
+/* =========================================
+   3. DANH SÁCH TRƯỜNG & ABOUT US & FOOTER
+========================================= */
+.section { padding: 80px 8%; }
+.section-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; }
+.badge { display: inline-block; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; margin-bottom: 12px; }
+.badge-blue { background: #e0e7ff; color: var(--primary); }
+.badge-orange { background: #ffedd5; color: #ea580c; }
+.section-title { font-size: 36px; font-weight: 800; }
+.view-all { color: #b91c1c; font-weight: 600; font-size: 15px; border-bottom: 1px solid #b91c1c; padding-bottom: 2px;}
+
+.school-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.school-card { background: var(--bg-card); padding: 30px; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: 0.3s; }
+.school-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+.card-icon { width: 60px; height: 60px; border-radius: 12px; background: var(--bg-input); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-weight: 800; color: var(--primary); font-size: 24px; }
+.school-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+.school-card p { font-size: 14px; color: var(--text-sub); margin-bottom: 24px; line-height: 1.6; }
+.card-tags { display: flex; gap: 8px; }
+.card-tag { background: var(--bg-input); padding: 6px 12px; border-radius: 8px; font-size: 11px; font-weight: 700; color: var(--text-sub); }
+
+.about-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-text h2 { font-size: 40px; font-weight: 800; margin-bottom: 24px; }
+.about-text p { color: var(--text-sub); margin-bottom: 16px; font-size: 16px; }
+.admin-card { background: var(--bg-input); padding: 40px; border-radius: 24px; transition: 0.3s;}
+.admin-card h3 { font-size: 20px; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+.admin-card p { font-style: italic; color: var(--text-sub); margin-bottom: 16px; }
+.admin-profile { display: flex; align-items: center; gap: 16px; margin-top: 24px; }
+.avatar { width: 50px; height: 50px; border-radius: 50%; background: #cbd5e1; }
+.admin-profile strong { display: block; font-size: 15px; }
+.admin-profile span { font-size: 12px; color: var(--text-sub); text-transform: uppercase; font-weight: 600;}
+
+.footer { display: flex; justify-content: space-between; align-items: center; padding: 40px 8%; border-top: 1px solid #e2e8f0; margin-top: 40px; }
+.footer-logo { font-size: 20px; font-weight: 800; color: var(--primary); margin-bottom: 8px;}
+.footer-text { font-size: 13px; color: var(--text-sub); }
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { color: var(--text-sub); font-size: 13px; transition: 0.3s; }
+.footer-links a:hover { color: var(--primary); }

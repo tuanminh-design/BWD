@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniMatch - Tìm kiếm trường Đại học</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">UniMatch</div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#school-list">School list</a></li>
+                <li><a href="#about-us">About us</a></li>
+            </ul>
+        </nav>
+
+        <button class="theme-btn">☀️</button>
+    </header>
+
+    <section id="home" class="pages hero">
+        <h1>Tìm kiếm ngôi trường<br>tương lai của bạn cùng<br><span class="text-gradient">UniMatch</span></h1>
+        <p>Navigate the complex world of university admissions with an editorial<br>approach designed for the ambitious student.</p>
+
+        <div class="search-card-container">
+            <div class="search-box">
+                <form id="searchForm">
+                    <div class="form-group">
+                        <label>CHỌN TỔ HỢP</label>
+                        <select>
+                            <option>A00: Toán, Lý, Hóa</option>
+                            <option>A01: Toán, Lý, Anh</option>
+                            <option>D01: Toán, Văn, Anh</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>NHẬP ĐIỂM 3 MÔN</label>
+                        <div class="grid-3">
+                            <input type="number" placeholder="Môn 1" min="0" max="10" step="0.25">
+                            <input type="number" placeholder="Môn 2" min="0" max="10" step="0.25">
+                            <input type="number" placeholder="Môn 3" min="0" max="10" step="0.25">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>BẠN ĐANG QUAN TÂM HOẶC CÓ NĂNG KHIẾU VỀ:</label>
+                        <div class="tags-container">
+                            <button type="button" class="tag">#IT</button>
+                            <button type="button" class="tag">#Nghệ thuật</button>
+                            <button type="button" class="tag">#Kinh tế</button>
+                            <button type="button" class="tag">#Ngôn ngữ</button>
+                            <button type="button" class="tag">#Y khoa</button>
+                            <button type="button" class="tag">#Kỹ thuật</button>
+                            <button type="button" class="tag">#Sư phạm</button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Tìm Trường Phù Hợp &rarr;</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="school-list" class="pages section">
+        <div class="section-header">
+            <div>
+                <span class="badge badge-blue">UNIVERSITY LIST</span>
+                <h2 class="section-title">Explore Top Institutions</h2>
+            </div>
+            <a href="#" class="view-all">Xem tất cả các trường &rarr;</a>
+        </div>
+
+        <div class="school-grid">
+            <div class="school-card">
+                <div class="card-icon">BK</div>
+                <h3>Đại học Bách Khoa</h3>
+                <p>Dẫn đầu trong lĩnh vực kỹ thuật và công nghệ tại Việt Nam với mạng lưới đối tác quốc tế sâu rộng.</p>
+                <div class="card-tags">
+                    <span class="card-tag">ENGINEERING</span>
+                    <span class="card-tag">TECH</span>
+                </div>
+            </div>
+            <div class="school-card">
+                <div class="card-icon" style="background:#fef3c7; color:#d97706;">NT</div>
+                <h3>Đại học Ngoại Thương</h3>
+                <p>Môi trường năng động, đào tạo những nhà kinh tế và nhà quản trị hàng đầu cho tương lai.</p>
+                <div class="card-tags">
+                    <span class="card-tag">BUSINESS</span>
+                    <span class="card-tag">ECONOMICS</span>
+                </div>
+            </div>
+            <div class="school-card">
+                <div class="card-icon" style="background:#e0f2fe; color:#0284c7;">KT</div>
+                <h3>Đại học Kinh tế Quốc dân</h3>
+                <p>Nơi khởi đầu của những ước mơ kinh doanh với chương trình học tiên tiến và cơ sở vật chất hiện đại.</p>
+                <div class="card-tags">
+                    <span class="card-tag">FINANCE</span>
+                    <span class="card-tag">MANAGEMENT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="pages section">
+        <div class="about-layout">
+            <div class="about-text">
+                <span class="badge badge-orange">GIỚI THIỆU</span>
+                <h2>Về UniMatch</h2>
+                <p>UniMatch ra đời với sứ mệnh trở thành người bạn đồng hành tin cậy trên con đường chinh phục cánh cửa đại học của các bạn học sinh.</p>
+                <p>Thông qua các công cụ phân tích thông minh dựa trên điểm số và sở thích cá nhân, chúng mình giúp bạn tối ưu hóa lựa chọn, biến những áp lực thi cử thành hành trình khám phá bản thân thú vị.</p>
+            </div>
+            <div class="admin-card">
+                <h3>💬 Lời nhắn từ Admin</h3>
+                <p>"Chào các bạn, mình hiểu rằng giai đoạn chọn trường, chọn ngành luôn là một trong những quyết định khó khăn. UniMatch không chỉ là một trang web tra cứu điểm, mà là tâm huyết của đội ngũ mong muốn tiếp thêm sự tự tin cho các bạn."</p>
+                <div class="admin-profile">
+                    <div class="avatar"></div>
+                    <div>
+                        <strong>The Academic Visionary</strong>
+                        <span>FOUNDER OF UNIMATCH</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>
+            <div class="footer-logo">UniMatch</div>
+            <p class="footer-text">© 2024 UniMatch. Guided by The Academic Visionary.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Support</a>
+        </div>
+    </footer>
+</body>
+</html>
