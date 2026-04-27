@@ -1,0 +1,58 @@
+[
+  {
+    "id": "dut",
+    "name": "Dai hoc Bach khoa - Dai hoc Da Nang (DUT)",
+    "shortName": "DUT",
+    "matchScore": 98,
+    "admissionScore": 25.5,
+    "minUserScore": 25.5,
+    "combination": "Toan, Ly, Hoa",
+    "majorSuggestion": "Cong nghe thong tin (Ky su)",
+    "address": "54 Nguyen Luong Bang, Hoa Khanh Bac, Lien Chieu, Da Nang",
+    "students": "15,000+",
+    "rank": "TOP 1",
+    "employmentRate": "97%",
+    "summary": "Truong Dai hoc Bach khoa (DUT) la canh chim dau dan trong dao tao ky thuat tai mien Trung va Tay Nguyen, thuoc nhom truong ky thuat hang dau Viet Nam.",
+    "detailDescription": "DUT so huu he thong hon 100 phong thi nghiem hien dai, thu vien dien tu quy mo va mang luoi hop tac voi cac tap doan lon, giup sinh vien tiep can moi truong lam viec thuc te ngay tu khi con di hoc.",
+    "standardTuition": "~13M - 15.5M VND / Hoc ky",
+    "advancedTuition": "~18M - 19M VND / Hoc ky",
+    "majors": [
+      { "code": "7480101", "name": "Cong nghe thong tin (Ky su)", "score": "27.00 - 28.00" },
+      { "code": "7480109", "name": "Khoa hoc Du lieu va Tri tue nhan tao", "score": "26.50 - 27.50" },
+      { "code": "7520401", "name": "Ky thuat Thiet ke Vi mach ban dan", "score": "26.00 - 27.00" },
+      { "code": "7520216", "name": "Ky thuat Dieu khien va Tu dong hoa", "score": "25.50 - 26.50" },
+      { "code": "7580101", "name": "Kien truc (Mon Ve nhan he so 2)", "score": "23.00 - 24.50" }
+    ],
+    "logo": "../ảnh/logoVKU.png",
+    "coverImage": "../ảnh/truongVKU.png",
+    "lat": 16.0756,
+    "lng": 108.1536
+  },
+  {
+    "id": "vku",
+    "name": "Dai hoc Viet - Han (VKU)",
+    "shortName": "VKU",
+    "matchScore": 95,
+    "admissionScore": 23.25,
+    "combination": "Toan, Ly, Hoa",
+    "majorSuggestion": "Cong nghe thong tin va Truyen thong",
+    "address": "470 Tran Dai Nghia, Ngu Hanh Son, Da Nang",
+    "students": "6,500+",
+    "rank": "TOP 1",
+    "employmentRate": "95%",
+    "summary": "Truong Dai hoc Cong nghe Thong tin va Truyen thong Viet - Han (VKU) la ngoi truong cong lap hang dau tai mien Trung - Tay Nguyen ve dao tao CNTT, Truyen thong va Kinh te so.",
+    "detailDescription": "Tao lac tai khu do thi dai hoc Da Nang voi khong gian xanh rong lon, he thong giang duong va khu lam viec sang tao dat chuan quoc te. VKU cam ket mang lai trai nghiem hoc tap hien dai, giup sinh vien san sang hoi nhap thi truong lao dong toan cau.",
+    "standardTuition": "~6.5M - 8M VND / Hoc ky",
+    "advancedTuition": "~10M - 12M VND / Hoc ky",
+    "majors": [
+      { "code": "7480201", "name": "Cong nghe Ky thuat may tinh (Ky su)", "score": 24.71 },
+      { "code": "7480101", "name": "Cong nghe thong tin (Ky su)", "score": 24.19 },
+      { "code": "7340115", "name": "Marketing", "score": 23.25 },
+      { "code": "7340122", "name": "Thuong mai dien tu", "score": 22.5 }
+    ],
+    "logo": "../ảnh/logoVKU.png",
+    "coverImage": "../ảnh/truongVKU.png",
+    "lat": 15.9751,
+    "lng": 108.2519
+  }
+]

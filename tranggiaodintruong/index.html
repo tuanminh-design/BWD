@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniMatch - Gợi ý trường</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniMatch - Goi y truong</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="../data/universities.js"></script>
+  <script src="./script.js" defer></script>
 </head>
 <body>
-    <main>
-        <h1>Trang giao diện trường</h1>
-        <p>Đây là trang nhận kết quả tìm kiếm trường phù hợp.</p>
-        <p><a href="../trangchinh/index.html">Quay lại trang chính</a></p>
-    </main>
+  <header class="page-header">
+    <div class="brand">UniMatch</div>
+    <nav class="tabs">
+      <a class="tab active" href="#">Goi y</a>
+      <span class="tab disabled">Map</span>
+    </nav>
+    <button class="theme-btn" type="button" aria-label="Toggle theme">☀</button>
+  </header>
+
+  <main class="container">
+    <header class="topbar">
+      <a href="../trangchinh/index.html" class="back-link">← BACK TO HOME</a>
+    </header>
+
+    <section class="intro">
+      <h1>Dua vao diem thi va so thich, UniMatch goi y:</h1>
+      <span class="accent-line"></span>
+    </section>
+
+    <section id="suggestionList" class="list"></section>
+  </main>
 </body>
 </html>
